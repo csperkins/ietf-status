@@ -1,0 +1,22 @@
+# See https://realpython.com/python-pyproject-toml/
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name    = "ietf_status"
+version = "0.0.1"
+authors = [{name = "Colin Perkins", email = "csp@csperkins.org"}]
+license = "BSD-2-Clause"
+
+requires-python = '>=3.14'
+
+dependencies = [
+  "mypy",
+  "setuptools",
+  "ollama",
+  "requests",
+  "types-requests",
+]
+
